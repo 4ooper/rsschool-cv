@@ -1,0 +1,44 @@
+body{
+    width: 99%;
+    background-color: #f8f5d1;
+}
+
+
+
+.main{
+    width: 70%;
+    height: 200px;
+    margin-left: 300px;
+    border-radius: 50px;
+}
+
+.avatarka{
+    border-radius: 100px;
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+.info{
+    position: absolute;
+    top: 50px;
+    left: 800px;
+    color:black;
+}
+
+main{
+    text-align: center;
+}
+
+.paragraph{
+    text-decoration: underline;
+}
+
+.foot{
+    width: 70%;
+    margin-left: 300px;
+    border-radius: 50px;
+}
+
+footer{
+    text-align: center;
+}
