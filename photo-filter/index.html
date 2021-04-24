@@ -109,9 +109,9 @@
             };
         }
 
-        drawImage();
 
         download.addEventListener('click', function(e){
+            drawImage();
             let link = document.createElement("a");
             link.download = 'download.png';
             link.href = canvas.toDataURL();
