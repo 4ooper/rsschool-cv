@@ -127,12 +127,12 @@
                 ctx.filter += 'saturate('+ saturate +'%)';
                 ctx.filter += 'hue-rotate('+ hue +'deg)';
                 ctx.drawImage(img, 0, 0);
+                let link = document.createElement("a");
+                link.download = 'download.png';
+                link.href = canvas.toDataURL();
+                link.click();
+                link.delete;
             };
-            let link = document.createElement("a");
-            link.download = 'download.png';
-            link.href = canvas.toDataURL();
-            link.click();
-            link.delete;
         });
 
         const fullscreen_btn = document.querySelector('.fullscreen');
