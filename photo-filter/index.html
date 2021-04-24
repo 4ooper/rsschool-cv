@@ -98,7 +98,7 @@
         const download = document.querySelector('.btn-save');
         const image = document.querySelector(".img-load");
 
-        function drawImage(){
+        download.addEventListener('click', function(e){
             const img = new Image();
             img.setAttribute('crossOrigin', 'anonymous');
             img.src = image.src;
@@ -107,17 +107,11 @@
               canvas.height = img.height;
               ctx.drawImage(img, 0, 0);
             };
-        }
-
-
-        download.addEventListener('click', function(e){
-            drawImage();
             let link = document.createElement("a");
             link.download = 'download.png';
             link.href = canvas.toDataURL();
             link.click();
             link.delete;
-
         });
 
         const fullscreen_btn = document.querySelector('.fullscreen');
