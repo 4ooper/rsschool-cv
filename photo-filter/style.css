@@ -28,7 +28,7 @@ body {
 }
 
 .result{
-    display: none;
+    display: block;
 }
 .main {
   min-height: calc(100vh - 110px);
